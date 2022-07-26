@@ -20,7 +20,7 @@ const marcup = images.map((images) => {
   return `<li ><img class="photo" src="${url}" alt="${alt}"></li>`
 }).join('');
 
-gallery.inserыtAdjacentHTML('afterbegin', marcup);
+gallery.insertAdjacentHTML('afterbegin', marcup);
 
 const photo = document.querySelectorAll('.photo');
 
