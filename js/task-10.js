@@ -10,12 +10,12 @@ const destroy = document.querySelector('button[data-destroy]')
 
 
 
-create.addEventListener('click', divGeneration);
-destroy.addEventListener('click', divDestroy)
+create.addEventListener('click', ()=>{ createBoxes(counter.value) });
+destroy.addEventListener('click', destroyBoxes);
 
-function divGeneration() {
+function createBoxes(amount) {
   let divSize = 30;
-  for (let i = 0; i < counter.value; i++){
+  for (let i = 0; i < amount; i++){
     
   const newDiv = document.createElement("div");
     
@@ -31,7 +31,6 @@ function divGeneration() {
   }
 }
 
-function divDestroy() {
-
+function destroyBoxes() {
   boxes.innerHTML = '';
 }
