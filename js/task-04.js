@@ -16,5 +16,3 @@ function decrement () {
 incrementBtn.addEventListener('click', increment);
 
 decrementBtn.addEventListener('click', decrement);
-
-console.log(decrementBtn.Number)

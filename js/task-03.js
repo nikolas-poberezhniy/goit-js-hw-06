@@ -24,8 +24,4 @@ gallery.insertAdjacentHTML('afterbegin', marcup);
 
 const photo = document.querySelectorAll('.photo');
 
-photo.forEach(element => {
-  
-  element.classList.add('photo');
-  
-});
+

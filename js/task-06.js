@@ -10,7 +10,8 @@ function checkLengh(event) {
     const target = event.currentTarget;
 
     if (target.value.length === Number(stringLength)) {
-        target.classList.replace('invalid', 'valid');
+        target.classList.remove('invalid');
+        target.classList.add('valid');
         return;
     };
     

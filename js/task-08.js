@@ -7,7 +7,7 @@ function formProcessing(e) {
 
     const { elements: { email, password } } = e.currentTarget;
 
-    if (email.value === "" || password.value === "") {
+    if (!email.value|| !password.value) {
         alert('Все поля должны быть заполнены');
         return;
     }

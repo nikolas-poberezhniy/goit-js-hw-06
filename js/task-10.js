@@ -7,14 +7,14 @@ const boxes = document.querySelector('#boxes');
 const counter = document.querySelector('input[type=number]');
 const create = document.querySelector('button[data-create]');
 const destroy = document.querySelector('button[data-destroy]')
-
+let divSize = 30;
 
 
 create.addEventListener('click', ()=>{ createBoxes(counter.value) });
 destroy.addEventListener('click', destroyBoxes);
 
 function createBoxes(amount) {
-  let divSize = 30;
+  
   for (let i = 0; i < amount; i++){
     
   const newDiv = document.createElement("div");
@@ -32,5 +32,6 @@ function createBoxes(amount) {
 }
 
 function destroyBoxes() {
+  divSize = 30;
   boxes.innerHTML = '';
 }
